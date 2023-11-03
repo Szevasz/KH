@@ -1,12 +1,7 @@
-# java_sport
+# KH
 
 ### 介绍
-**个人运动管理平台**
-使用微信小程序获取微信运动接口数据进行的统计平台，食物模块更详细的展示食物营养成分，帮助提高个人对健康的认识。
-bilibili地址[bilibili地址](https://www.bilibili.com/video/BV1Mq4y1W747?p=4)
 
-### 项目架构
-![输入图片说明](https://images.gitee.com/uploads/images/2022/0303/233742_bb06844c_8886246.png "屏幕截图.png")
 
 ### 环境准备
 ```bash
@@ -74,8 +69,3 @@ npm run serve
 5. 更改小程序图片域名地址：
 ![输入图片说明](tool/QQ%E5%9B%BE%E7%89%8720220320193646.png)
 ![输入图片说明](QQ%E5%9B%BE%E7%89%8720220320193641.png)
-## 部署
-  _**详情见tool/Sport部署笔记.pdf** _ 
-
-# 欢迎进群讨论
-![输入图片说明](https://images.gitee.com/uploads/images/2022/0304/001854_a5b707a4_8886246.png "屏幕截图.png")
