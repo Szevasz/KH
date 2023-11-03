@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+    color: #3D3D3D;
+    margin-bottom: 15px;
+}
+
+.step {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 22px;
+    color: #848484;
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+/* 编写全局样式 */
+
+/* 主页面样式 */
+html, body, #app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 表格样式 */
+.el-table {
+    width: 100%;
+    margin-top: 20px;
+    min-height: 400px;
+}
+/* 面包屑导航的全局样式 */
+.el-breadcrumb {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* 分页样式 */
+.el-pagination {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* 对话框样式 */
+/* .el-dialog {
+    text-align: left;
+} */
+
+.main-card {
+    min-height: 570px;
+}
+
+
+
+/* 对话框透明度 */
+.el-dialog {
+    opacity: 0.9;
+}
+
+/* 默认不显示手机端markdown */
+.phone-md {
+    display: none !important;
+}
+
+
+/* 适应手机端 */
+
+/* 消息框 */
+@media screen and (max-width: 500px) {
+    .el-message {
+        min-width: 80% !important;
+    }
+    .el-message__content {
+        font-size: 5px !important;
+    }
+}
+
+/* 提示框 */
+@media screen and (max-width: 500px) {
+    .el-message-box{
+        width: 80% !important;
+    }
+    .el-dialog {
+        width: 90% !important;
+    }
+}
+
+
+/* 面包屑样式 */
+@media screen and (max-width: 500px) {
+    .el-breadcrumb{
+        margin-bottom: 5px !important;
+        font-size: 5px !important;
+    }
+}
+
+/* 编辑器 */
+@media screen and (max-width: 500px) {
+    .phone-md {
+        display: block !important;
+    }
+    .pc-md {
+        display: none !important;
+    }
+}

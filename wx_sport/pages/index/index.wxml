@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view>
+	<van-tabs active="{{ active }}" bind:change="onChange" color="#07C160">
+		<van-tab title="运动资讯">
+			<van-card wx:if="{{ tableList.length > 0 }}" wx:for="{{ tableList }}" wx:key="index" desc="发表时间：{{ item.createTime }}" title="标题：{{ item.title }}">
+				<view slot="footer">
+					<van-button type="primary" size="mini" data-id="{{ item.id }}" bindtap="toDetails">查看详情</van-button>
+				</view>
+			</van-card>
+			<van-empty wx:if="{{ tableList.length < 1 }}" description="暂无数据" />
+		</van-tab>
+		<van-tab title="运动商品">
+			<van-card 
+			wx:if="{{ tableList.length > 0 }}" 
+			wx:for="{{ tableList }}" 
+			wx:key="index" 
+			desc="特色功能：{{ item.characteristic }}" 
+			num="{{ item.number }}"
+			thumb="{{ image2.formatImage(item.imageUrl) }}"
+			data-image2="{{ item.imageUrl }}"
+			price="{{ item.price }}"
+			title="{{ item.name }}"/>
+			<van-empty wx:if="{{ tableList.length < 1 }}" description="暂无数据" />
+		</van-tab>
+		<van-tab title="运动项目">
+			<van-card wx:if="{{ tableList.length > 0 }}" wx:for="{{ tableList }}" wx:key="index" desc="适于年龄：{{ item.applicableAge }}" title="运动名称：{{ item.name }}">
+				<view slot="footer">
+					<van-button type="warning" size="mini" data-id="{{ item.id }}" bindtap="toDetails2">查看详情</van-button>
+				</view>
+			</van-card>
+			<van-empty wx:if="{{ tableList.length < 1 }}" description="暂无数据" />
+		</van-tab>
+	</van-tabs>
+</view>
+
+<!-- wxml页面内置js -->
+<wxs module="image2">
+    // 暴露使用的方法
+    module.exports = {
+        formatImage: function (str) {
+            if (str) {
+				if (str.indexOf('http') != -1) {
+					return str;
+				} else {
+					return 'http://szevasz.top/' + str;
+				}
+            } else {
+                return 'http://szevasz.top/20231020090406.jpg';
+            }
+        }
+    }
+</wxs>

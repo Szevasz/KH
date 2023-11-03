@@ -1,0 +1,17 @@
+<!-- pages/home/home.wxml -->
+<view class="container">
+  <image src="/image/selfcontrol.png" class="header-text"></image>
+  <view class="LogoContainer">
+    <image class="Logo" src="/image/KH.png"></image>
+  </view>
+  
+  <text class="about" bindtap="showModal">了解我们</text>
+</view>
+
+<!-- 添加模态框 -->
+<view wx:if="{{modalVisible}}" class="modal">
+  <text class="modal-content">
+    这里是更多内容，你可以在这里添加你的详细信息或说明。
+  </text>
+  <button class="close-btn" bindtap="hideModal">关闭</button>
+</view>

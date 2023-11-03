@@ -1,0 +1,6 @@
+<view class="container">
+	<view class="userinfo">
+		<van-image round width="10rem" height="10rem" src="{{ userInfo.avatar }}"  bindtap="getInfo" />
+        <van-button type="primary" size="small" bindtap="logout">退出登录</van-button>
+	</view>
+</view>
