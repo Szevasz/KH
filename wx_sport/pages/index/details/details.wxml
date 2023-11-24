@@ -1,6 +1,6 @@
-<view>
+<view class="container">
     <!-- 创建者：<van-tag type="warning">{{ dataInfo.createName }}</van-tag>
     创建时间：<van-tag type="primary">{{ dataInfo.createTime }}</van-tag> -->
-    <towxml nodes="{{dataInfo}}" wx:if="{{ flag }}"/>
+    <towxml nodes="{{dataInfo}}" wx:if="{{ flag }}" style="color: #58C9B9;;"/>
     <van-empty wx:if="{{ !flag }}" description="暂无数据" />
 </view>

@@ -32,8 +32,8 @@ Page({
 				};
 				app.ajax('mini/update/info', 'POST', form).then((res) => {
 					wx.showToast({
-						title: "szevasz"
-					});
+						title: "授权成功"
+                    });
 				});
 			}
 		})
@@ -63,14 +63,19 @@ Page({
 		wx.switchTab({
 			url: '/pages/user/user',
 		});
-	},
+    },
+    
+    editProfile(){
+        console.log(this.data.userInfo)
+    },
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
 		this.setData({
 			userInfo: wx.getStorageSync('userInfo')
-		});
+        });
+        console.log(this.data.userInfo)
 	},
 
 	/**

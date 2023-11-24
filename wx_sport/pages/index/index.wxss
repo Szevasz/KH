@@ -1,0 +1,4 @@
+.container{
+    background: linear-gradient(white 80%, #58C9B9);
+    /* height: 100vh; */
+}

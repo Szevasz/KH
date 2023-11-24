@@ -1,15 +1,15 @@
 <!--index.wxml-->
 <view>
-	<van-tabs active="{{ active }}" bind:change="onChange" color="#07C160">
+	<van-tabs active="{{ active }}" bind:change="onChange" color="#58C9B9">
 		<van-tab title="运动资讯">
 			<van-card wx:if="{{ tableList.length > 0 }}" wx:for="{{ tableList }}" wx:key="index" desc="发表时间：{{ item.createTime }}" title="标题：{{ item.title }}">
 				<view slot="footer">
-					<van-button type="primary" size="mini" data-id="{{ item.id }}" bindtap="toDetails">查看详情</van-button>
+					<van-button type="primary" size="small" data-id="{{ item.id }}" bindtap="toDetails" color="linear-gradient(to right, #70C1B3, #247BA0)">查看详情</van-button>
 				</view>
 			</van-card>
 			<van-empty wx:if="{{ tableList.length < 1 }}" description="暂无数据" />
 		</van-tab>
-		<van-tab title="运动商品">
+		<van-tab title="运动商品" class="goods">
 			<van-card 
 			wx:if="{{ tableList.length > 0 }}" 
 			wx:for="{{ tableList }}" 
@@ -25,7 +25,7 @@
 		<van-tab title="运动项目">
 			<van-card wx:if="{{ tableList.length > 0 }}" wx:for="{{ tableList }}" wx:key="index" desc="适于年龄：{{ item.applicableAge }}" title="运动名称：{{ item.name }}">
 				<view slot="footer">
-					<van-button type="warning" size="mini" data-id="{{ item.id }}" bindtap="toDetails2">查看详情</van-button>
+					<van-button type="warning" size="small" data-id="{{ item.id }}" bindtap="toDetails2" color="linear-gradient(to right, #70C1B3, #247BA0)">查看详情</van-button>
 				</view>
 			</van-card>
 			<van-empty wx:if="{{ tableList.length < 1 }}" description="暂无数据" />

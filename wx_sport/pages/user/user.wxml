@@ -1,6 +1,15 @@
 <view class="container">
-	<view class="userinfo">
-		<van-image round width="10rem" height="10rem" src="{{ userInfo.avatar }}"  bindtap="getInfo" />
-        <van-button type="primary" size="small" bindtap="logout">退出登录</van-button>
-	</view>
+    <view class="userinfo">
+        <!-- 使用 van-image 组件显示用户头像 -->
+        <image src="{{userInfo.avatar}}" bindtap="getInfo" class="userinfo-avatar"/>
+
+        <van-cell-group inset class="info">
+            <van-cell title="昵称" value="{{userInfo.nickName}}" />
+            <van-cell title="性别" value="{{userInfo.sex === 0 ? '男' : '女'}}" />
+            <van-cell title="邮箱" value="{{userInfo.email}}" />
+            <van-cell title="电话" value="{{userInfo.phoneNumber}}" />
+        </van-cell-group>  
+        <!-- 使用 van-button 组件实现退出登录按钮 -->
+        <van-button type="primary" size="small" bindtap="logout" color="linear-gradient(to right, #70C1B3, #247BA0)">退出登录</van-button>
+    </view>
 </view>

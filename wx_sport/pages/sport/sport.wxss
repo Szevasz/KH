@@ -1,13 +1,17 @@
+.container{
+    background: linear-gradient(white 80%, #58C9B9);
+    height: 100vh;
+}
 .title {
     text-align: center;
     color: #3D3D3D;
-    margin-bottom: 15px;
+    margin-bottom: -220px;
 }
 
 .step {
     font-family:'Courier New', Courier, monospace;
     font-size: 22px;
     color: #848484;
-    margin-top: 10px;
+    padding-bottom: 20px;
     text-align: center;
 }

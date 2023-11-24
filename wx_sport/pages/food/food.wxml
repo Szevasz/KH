@@ -1,5 +1,5 @@
-<view>
-    <van-grid column-num="3">
+<view class="container">
+    <van-grid column-num="3" class="grid">
         <van-grid-item 
             use-slot 
             wx:for="{{ tableList }}" 

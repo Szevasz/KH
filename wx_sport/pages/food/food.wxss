@@ -1,3 +1,10 @@
+.container{
+    background: linear-gradient(white 80%, #58C9B9);
+    height: 100vh;
+}
 .title {
     font-size: 12px;
+}
+.grid{
+    background-color: #58C9B9;
 }
